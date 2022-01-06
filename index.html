@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<Main id="main">
+<header class="header">
+    <h1 id="title">Online Restaurant Survey Form</h1>
+    <p id="description">Please help us learn what we need more work on</p>
+</header>
+
+<form id="survey-form">
+    <div id="form-item">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" class="input-item" name="name" placeholder="Type your name" required/>
+    </div>
+    <div id="form-item">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" class="input-item" name="email" placeholder="Type your email" required/>
+    </div>
+    <div id="form-item">
+        <label for="number" id="number-label">Table number(displayed on your table)</label>
+        <input type="number" id="number" class="input-item" name="table-number" placeholder="Type your table number" min="2" max="13" required/>
+    </div>
+
+
+    <div class="form-item">
+        <p>How did you learn about us?</p>
+        <select id="dropdown" name="information" class="form-control" required>
+          <option disabled selected value>Select</option>
+          <option value="Friends">Friends</option>
+          <option value="Family">Family</option>
+          <option value="Social media">Social media</option>
+          <option value="other">Other</option>
+        </select>
+    </div>
+
+    <div id="form-item">
+        <p>How was our service?</p>
+        <label>
+            <input name="rating" value="Very good" type="radio" class="input-radio" checked/>Very good
+       </label>
+       <label>
+            <input name="rating" value="good" type="radio" class="input-radio" />Good
+       </label>
+       <label>
+             <input name="rating" value="Average" type="radio" class="input-radio"/>Average
+       </label>
+       <label>
+             <input name="rating" value="Poor" type="radio" class="input-radio"/>Poor
+       </label>    
+    </div>
+
+    <div class="form-item">
+        <p>
+          What did you order?
+        </p>
+  
+        <label> 
+            <input name="food" value="Starter" type="checkbox" class="input-checkbox"/>
+            Starter
+        </label>
+        <label> 
+            <input name="food" value="Juice" type="checkbox" class="input-checkbox"/>
+            Juice
+        </label>
+        <label> 
+            <input name="food" value="Burger" type="checkbox" class="input-checkbox"/>
+            Burger
+        </label>
+        <label> 
+            <input name="food" value="Pizza" type="checkbox" class="input-checkbox"/>
+            Pizza
+        </label>
+        <label> 
+            <input name="food" value="Biriyani" type="checkbox" class="input-checkbox"/>
+            Biriyani
+        </label>
+        <label> 
+            <input name="food" value="Bar-b-que" type="checkbox" class="input-checkbox"/>
+            Bar-b-que
+        </label>
+      </div>
+
+      <div class="form-item">
+        <p>Feedback?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="Feedback"
+          placeholder="Provide us your feedback"
+        ></textarea>
+      </div>
+  
+      <div class="form-item">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+</form>
+
+</Main>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
