@@ -1,12 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    color: #ffffff;
+    font-family: 'poppins', sans-serif;
+    width: 100%;
+    background: linear-gradient(100deg, hsla(113, 96%, 81%, 1) 0%, hsla(188, 90%, 51%, 1) 100%);
+
+}
+#main{
+    
+    justify-content: center;
+    text-align: center;     
+}
+
+#survey-form{
+    background-color: #82f4b1;
+    margin: 0 auto 4rem auto;
+    max-width: 500px;
+    padding: 2rem 2rem;
+    text-align: start;
+    border-radius: 10px;
+}
+
+#form-item{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+label{
+    font-size: .9rem;
+}
+
+#title{
+    padding: 15px 15px 5px 15px;
+}
+
+#description{
+    padding-bottom: 30px;
+    font-size: .75rem;
+}
 
 
+.submit-button,
+.input-item,
+#dropdown,
+.input-textarea{
+    width: 100%;
+    padding: .5rem;
+    background-color: #f4fdef;
+    border: none;
+    border-radius: 5px;
+    margin-top: 4px ;
+}
 
-
-Body{
-background: linear-gradient(90deg, rgba(233,228,240, 0.911) 0%, rgba(194, 187, 209, 0.555) 100%);
+.buttonmain{
+    background-color: #243748;
+    color: white;
 }

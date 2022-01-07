@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<Main id="main">
+<div id="main" class="main">
 <header class="header">
     <h1 id="title">Online Restaurant Survey Form</h1>
     <p id="description">Please help us learn what we need more work on</p>
@@ -29,7 +29,7 @@
     </div>
 
 
-    <div class="form-item">
+    <div id="form-item">
         <p>How did you learn about us?</p>
         <select id="dropdown" name="information" class="form-control" required>
           <option disabled selected value>Select</option>
@@ -40,8 +40,9 @@
         </select>
     </div>
 
-    <div id="form-item">
+    <div id="form-item" class="simple-container">
         <p>How was our service?</p>
+        <div class="simple-container">
         <label>
             <input name="rating" value="Very good" type="radio" class="input-radio" checked/>Very good
        </label>
@@ -53,14 +54,15 @@
        </label>
        <label>
              <input name="rating" value="Poor" type="radio" class="input-radio"/>Poor
-       </label>    
+       </label>
+       </div>    
     </div>
 
-    <div class="form-item">
+    <div id="form-item" class="simple-container">
         <p>
           What did you order?
         </p>
-  
+        <div class="simple-container">
         <label> 
             <input name="food" value="Starter" type="checkbox" class="input-checkbox"/>
             Starter
@@ -85,6 +87,7 @@
             <input name="food" value="Bar-b-que" type="checkbox" class="input-checkbox"/>
             Bar-b-que
         </label>
+        </div>  
       </div>
 
       <div class="form-item">
@@ -97,14 +100,14 @@
         ></textarea>
       </div>
   
-      <div class="form-item">
-        <button type="submit" id="submit" class="submit-button">
+      <div class="form-item ">
+        <button type="submit" id="submit" class="submit-button buttonmain">
           Submit
         </button>
       </div>
 </form>
 
-</Main>
+</div>
 
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
